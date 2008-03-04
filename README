@@ -5,7 +5,7 @@ The Finance::OFX module is an implementation of an Open Financial Exchange
 client. At the moment it can be used to query account information and 
 transaction statements from financial institutions supporting OFX version 1. 
 Eventually it should be able to handle all OFX v1 and v2 operations, as well 
-load saved files (in case you're like me and have several years worth of 
+as load saved files (in case you're like me and have several years worth of 
 manually downloaded ofx files).
 
 INSTALLATION
