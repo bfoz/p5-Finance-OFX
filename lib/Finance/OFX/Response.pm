@@ -7,7 +7,7 @@
 #
 # Copyright 2008 Brandon Fosdick <bfoz@bfoz.net> (BSD License)
 #
-# $Id: Response.pm,v 1.1 2008/03/04 01:06:36 bfoz Exp $
+# $Id: Response.pm,v 1.2 2008/03/04 04:22:27 bfoz Exp $
 
 package Finance::OFX::Response;
 
@@ -16,7 +16,7 @@ use warnings;
 use vars qw($VERSION);
 use base qw(HTTP::Response);
 
-$VERSION = sprintf("%d.%03d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 use Finance::OFX::Parse;
 
@@ -135,6 +135,16 @@ Get the status code from the SONRS block.
 L<Finance::OFX::Parse>
 L<HTTP::Response>
 L<http://ofx.net>
+
+=head1 WARNING
+
+From C<Finance::Bank::LloydsTSB>:
+
+This is code for B<online banking>, and that means B<your money>, and
+that means B<BE CAREFUL>. You are encouraged, nay, expected, to audit
+the source of this module yourself to reassure yourself that I am not
+doing anything untoward with your banking data. This software is useful
+to me, but is provided under B<NO GUARANTEE>, explicit or implied.
 
 =head1 AUTHOR
 

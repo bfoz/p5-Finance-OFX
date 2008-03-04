@@ -7,7 +7,7 @@
 #
 # Copyright 2008 Brandon Fosdick <bfoz@bfoz.net> (BSD License)
 #
-# $Id: Institution.pm,v 1.1 2008/03/04 01:06:36 bfoz Exp $
+# $Id: Institution.pm,v 1.2 2008/03/04 04:22:27 bfoz Exp $
 
 package Finance::OFX::Institution;
 
@@ -15,7 +15,7 @@ use strict;
 use warnings;
 use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%03d", q$Revision: 1.1 $ =~ /(\d+)\.(\d+)/);
+$VERSION = sprintf("%d.%03d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
 
 use constant DEFAULT_OPTIONS =>
 {
@@ -162,6 +162,16 @@ Get/Set the URL for the Institution's OFX server.
 =head1 SEE ALSO
 
 L<http://ofx.net>
+
+=head1 WARNING
+
+From C<Finance::Bank::LloydsTSB>:
+
+This is code for B<online banking>, and that means B<your money>, and
+that means B<BE CAREFUL>. You are encouraged, nay, expected, to audit
+the source of this module yourself to reassure yourself that I am not
+doing anything untoward with your banking data. This software is useful
+to me, but is provided under B<NO GUARANTEE>, explicit or implied.
 
 =head1 AUTHOR
 
