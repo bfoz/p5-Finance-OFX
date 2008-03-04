@@ -1,0 +1,12 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/Finance-OFX.t
+lib/Finance/OFX.pm
+lib/Finance/OFX/Account.pm
+lib/Finance/OFX/Institution.pm
+lib/Finance/OFX/Parse.pm
+lib/Finance/OFX/Response.pm
+lib/Finance/OFX/Tree.pm
+lib/Finance/OFX/UserAgent.pm
