@@ -85,7 +85,7 @@ sub parse_dates
 		# Handle timezone offsets that were already 2 digits
 		$tree->{$_} =~ s/\[([-+]?)([0-9]{1,2}):[A-Z]{3}\]/ $1$2\x30\x30/;
 		# Do the conversion
-		$tree->{$_} = str2time($tree->{$_});
+		$tree->{$_} = str2time($tree->{$_}, 'GMT');
 	    }
 	    else
 	    {
