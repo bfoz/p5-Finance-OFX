@@ -97,16 +97,15 @@ sub parse_dates
 
 sub parse
 {
+    $_[0] =~ s/\x0D//g;			# Un-networkify newlines
+
     my ($header, $body) = split /\n\n/, shift, 2;
 
     # Parse the OFX header block
     $header =~ s/^\s//;				# Strip leading whitespace
-    $header =~ s/\x0D//g;			# Un-networkify newlines
     my %header = split /[:\n]/, $header;	# Convert to a hash
 
     return undef unless ($header{OFXHEADER} == '100') and ($header{DATA} eq 'OFXSGML');
-
-#    $body =~ s/\x0D//g;			# Un-networkify newlines
 
     my $tree = Finance::OFX::Tree::parse($body);
     return undef unless $tree and ($tree->[0]{name} eq 'ofx');
