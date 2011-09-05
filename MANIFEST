@@ -1,4 +1,4 @@
-Build.PL
+Build.pl
 Changes
 lib/Finance/OFX.pm
 lib/Finance/OFX/Account.pm
