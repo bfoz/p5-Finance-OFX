@@ -12,9 +12,8 @@ package Finance::OFX::Tree;
 
 use strict;
 use warnings;
-use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%03d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = '2';
 
 use HTML::Parser;
 

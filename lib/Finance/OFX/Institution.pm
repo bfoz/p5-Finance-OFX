@@ -13,9 +13,8 @@ package Finance::OFX::Institution;
 
 use strict;
 use warnings;
-use vars qw($VERSION);
 
-$VERSION = sprintf("%d.%03d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = '2';
 
 use constant DEFAULT_OPTIONS =>
 {

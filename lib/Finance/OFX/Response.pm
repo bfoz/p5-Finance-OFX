@@ -16,7 +16,7 @@ use warnings;
 use vars qw($VERSION);
 use base qw(HTTP::Response);
 
-$VERSION = sprintf("%d.%03d", q$Revision: 1.2 $ =~ /(\d+)\.(\d+)/);
+our $VERSION = '2';
 
 use Finance::OFX::Parse;
 
