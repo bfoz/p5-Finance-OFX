@@ -13,6 +13,10 @@ my $builder = Module::Build->new(
     },
     requires => {
         'perl' => 5.006,
+        'Data::GUID'     => 0,
+        'HTML::Parser'   => 0,
+        'HTTP::Date'     => 0,
+        'LWP'            => 0,
     },
     add_to_cleanup      => [ 'Finance-OFX-*' ],
     create_makefile_pl => 'traditional',
