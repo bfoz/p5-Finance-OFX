@@ -8,6 +8,7 @@ my $builder = Module::Build->new(
     license             => 'bsd',
     dist_author         => q{Brandon Fosdick <bfoz@bfoz.net>},
     dist_version_from   => 'lib/Finance/OFX.pm',
+    configure_requires => { 'Module::Build' => 0.38 },
     build_requires => {
         'Test::More' => 0,
     },
