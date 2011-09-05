@@ -1,8 +1,5 @@
+Build.PL
 Changes
-Makefile.PL
-MANIFEST
-README
-t/Finance-OFX.t
 lib/Finance/OFX.pm
 lib/Finance/OFX/Account.pm
 lib/Finance/OFX/Institution.pm
@@ -10,3 +7,12 @@ lib/Finance/OFX/Parse.pm
 lib/Finance/OFX/Response.pm
 lib/Finance/OFX/Tree.pm
 lib/Finance/OFX/UserAgent.pm
+MANIFEST			This list of files
+README
+t/00-load.t
+t/manifest.t
+t/pod-coverage.t
+t/pod.t
+Makefile.PL
+META.yml
+META.json
