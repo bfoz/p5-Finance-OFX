@@ -18,6 +18,7 @@ my $builder = Module::Build->new(
         'HTML::Parser'   => 0,
         'HTTP::Date'     => 0,
         'LWP'            => 0,
+        'File::Slurp'    => 0,
     },
     add_to_cleanup      => [ 'Finance-OFX-*' ],
     create_makefile_pl => 'traditional',
