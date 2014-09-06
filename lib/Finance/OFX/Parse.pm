@@ -15,6 +15,7 @@ use warnings;
 
 our $VERSION = '2';
 
+use File::Slurp;
 use Finance::OFX::Tree;
 use HTTP::Date;
 
